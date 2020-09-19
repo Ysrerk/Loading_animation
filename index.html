@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <h2 class="mheader">The example title here</h2>
+    <p class="main">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ipsum cupiditate aperiam at autem, quae quidem dignissimos sunt obcaecati tempora harum fugiat eius incidunt quisquam mollitia impedit magni recusandae ratione consectetur? Aut commodi
+        necessitatibus harum? Nihil doloribus eius voluptas deleniti autem in quos rem temporibus, libero eum error provident officia architecto a perferendis cum vel facilis similique quis eos laboriosam? Quisquam, molestiae explicabo dolorem qui atque
+        autem optio illum reprehenderit corrupti aut eius similique ipsum voluptas hic rerum veritatis, ipsam beatae animi alias totam. Veritatis explicabo odit iure culpa magni atque inventore veniam, quisquam dolores quia id dignissimos possimus ullam
+        nisi quas tempora exercitationem harum deserunt reprehenderit animi consectetur ab consequuntur natus architecto? Voluptatibus saepe aliquam, sed vero at labore quis dicta temporibus maxime harum error optio accusamus totam nihil ducimus, molestias
+        obcaecati quia. Itaque eum possimus sint beatae totam ipsa. Natus inventore quam itaque blanditiis! Facilis voluptatibus in dolorem.</p>
+
+
+
+
+
+    <div class="container">
+        <div id="load"></div>
+
+
+    </div>
+
+
+    <script>
+        document.querySelector('.main').style.display = "none";
+        document.querySelector('.mheader').style.display = "none";
+        document.getElementById('load').classList.add("loader");
+
+        setTimeout(function() {
+
+            document.getElementById('load').classList.remove('loader');
+            document.querySelector('.main').style.display = "block";
+            document.querySelector('.mheader').style.display = "block"
+
+        }, 3000)
+    </script>
+
+</body>
+
+</html>

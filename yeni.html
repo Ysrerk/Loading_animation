@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="yeni.css">
+</head>
+
+<body>
+
+    <div class="headm">
+        <h2 id="hm"> The axample header </h2>
+
+        <p class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse totam natus nobis! Quas quidem amet iusto sit et laborum similique consequatur natus porro? Ut ea iste, enim ratione officiis, quos quae consectetur aut molestias repellat optio soluta
+            beatae sit ducimus reiciendis aliquid! Expedita ducimus est natus voluptates similique tempora, voluptatem blanditiis nam quae architecto. Quae, delectus. Aliquam itaque ad repellat facilis ducimus id nostrum fugiat, quis, asperiores neque
+            minus laudantium doloremque molestias dignissimos officiis excepturi molestiae adipisci ipsa. Magnam in voluptatibus officiis. Ullam eveniet veniam quis debitis, cum itaque amet! Fugit tempora provident earum magni maiores quis quod dolore
+            laborum!
+        </p>
+    </div>
+
+    <div class="container">
+        <div id="load">
+
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById('load').classList.add('loader')
+        document.querySelector('.main').style.display = "none"
+        document.querySelector('#hm').style.display = "none"
+
+
+        setTimeout(() => {
+
+            document.getElementById('load').classList.remove('loader');
+            document.querySelector('.main').style.display = "block"
+            document.querySelector('#hm').style.display = "block"
+        }, 3000)
+    </script>
+
+</body>
+
+</html>
